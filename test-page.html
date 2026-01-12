@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PAgentic Extension Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-button { padding: 10px 20px; margin: 10px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        .test-input { padding: 8px; margin: 10px; width: 200px; }
+        .test-result { margin: 10px; padding: 10px; background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>PAgentic Browser Agent Test Page</h1>
+    <p>Use this page to test if the extension can interact with elements.</p>
+    
+    <h2>Interactive Elements:</h2>
+    <button class="test-button" onclick="showResult('Button clicked!')">Click Me</button>
+    <input class="test-input" placeholder="Type something here..." id="testInput">
+    <button class="test-button" onclick="showInputValue()">Get Input Value</button>
+    
+    <h2>Links:</h2>
+    <a href="#test1">Test Link 1</a> | 
+    <a href="#test2">Test Link 2</a>
+    
+    <h2>Test Results:</h2>
+    <div id="results" class="test-result">
+        Results will appear here...
+    </div>
+
+    <script>
+        function showResult(message) {
+            document.getElementById('results').innerHTML = message;
+        }
+        
+        function showInputValue() {
+            const input = document.getElementById('testInput');
+            showResult('Input value: "' + input.value + '"');
+        }
+        
+        console.log('PAgentic test page loaded');
+    </script>
+</body>
+</html>
