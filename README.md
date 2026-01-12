@@ -1,7 +1,5 @@
 # PAgentic Browser Agent
 
-> **⚠️ Note:** This is only the submodule for the PAgentic Browser agent, the main project is at -- https://github.com/browseros-ai/BrowserOS
-
 ## Contributing
 
 For information on how to contribute to this project and set up your development environment, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
